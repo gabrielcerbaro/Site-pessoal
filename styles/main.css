@@ -1,0 +1,75 @@
+.progresso-container {
+    margin-top: 200px;
+    align-items: center;
+    width: 100%
+}
+
+.meu-progresso {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.meu-progresso h1 {
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.meu-progresso img {
+    width: 30px;
+    height: auto;
+}
+
+.progresso-container > p {
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    color: #C9D1D9;
+}
+
+.progresso {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.progresso h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.progresso p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.progresso img {
+    width: 180px;
+    height: auto;
+    align-self: center;
+}
+
+.progresso div {
+    background-color: #e1e6f005;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 350px;
+    gap: 5px;
+    border-bottom: 1px solid #C9D1D9;
+    border-top: 1px solid #C9D1D9;
+    border-image: linear-gradient(to right, transparent, #2467aa, transparent) 1;
+    border-radius: 20px;
+}
+
+.progresso div:nth-child(1) {
+        background-color: #fbff02;
+}

@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0D1117, #132744);
+    padding: 30px;
+}
+
+main {
+    display: flex;
+}
