@@ -1,7 +1,38 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-top: 1px solid #C9D1D9;
+    border-image: linear-gradient(to right, transparent, #C9D1D9, transparent) 1;
+    width: 100%;
+    padding: 20px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #C9D1D9;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-bar a:hover {
+    color: blueviolet;
+    border-top: 1px solid blueviolet;
+    border-image: linear-gradient(to right, transparent, blueviolet, transparent) 1;
+}
+
 .progresso-container {
-    margin-top: 200px;
+    margin-top: 80px;
     align-items: center;
-    width: 100%
+    width: 100%;
 }
 
 .meu-progresso {
@@ -72,4 +103,133 @@
 
 .progresso div:nth-child(1) {
         background-color: #fbff02;
+}
+
+.projetos {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos h1 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        color: blueviolet;
+}
+
+.projetos strong {
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    color: #C9D1D9;
+}
+
+.projetos-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "card1 card2"
+    "card3 card4"
+    "card5 card5";
+    gap: 50px;
+}
+
+.projetos-container img { 
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.projetos-container p { 
+
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projetos-container h2 { 
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projetos-container a {
+    text-decoration: none;
+    color: #C9D1D9;
+}
+
+.projetos-container div {
+    background-color: #e1e6f005;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid #C9D1D9;
+    border-top: 1px solid #C9D1D9;
+    border-image: linear-gradient(to right, transparent, #2467aa, transparent) 1;
+    border-radius: 20px;
+}
+
+.projetos-container div:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    background-color: #e1e6f020;
+}
+
+.card1 { grid-area: card1; }
+.card2 { grid-area: card2; }
+.card3 { grid-area: card3; }
+.card4 { grid-area: card4; }
+.card5 { grid-area: card5; }
+
+footer {
+    background-color: #183757;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+}
+
+footer img:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+footer h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #C9D1D9;
+}
+
+@media (max-width: 768px) {
+  .nav-bar { 
+    flex-direction: column; gap: 12px; 
+    }   
+  .progresso { 
+    flex-direction: column; gap: 20px; 
+    }
+  .progresso div { 
+    width: 100%; max-width: 420px; 
+    }
+  .projetos-container { 
+    grid-template-columns: 1fr; gap: 20px; 
+    }
+  .container { 
+    padding: 0 16px; 
+    }
 }

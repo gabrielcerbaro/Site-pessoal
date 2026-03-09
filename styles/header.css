@@ -1,4 +1,6 @@
 .header {
+    background-image: url(../assets/images/header-fundo.avif);
+    background-size: cover;
     color: #C9D1D9;
     display: flex;
     flex-direction: column;
@@ -32,25 +34,16 @@
     font-size: 15px;
 }
 
-.seta-para-baixo {
-    margin-top: 100px;
-    width: 50px;
-    height: auto;
-}
-
-.seta-para-baixo:hover {
-    transform: translateY(5px);
-    transition: transform 0.3s ease;
-}
-
 .icons {
     display: flex;
     border-bottom: 1px solid #C9D1D9;
     border-top: 1px solid #C9D1D9;
     border-image: linear-gradient(to right, transparent, #C9D1D9, transparent) 1;
+    max-width: 1200px;
     width: 100%;
     padding: 10px;
     justify-content: space-evenly;
+    margin-bottom: 80px;
 }
 
 .icons img {
