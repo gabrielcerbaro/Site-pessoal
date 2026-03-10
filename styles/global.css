@@ -8,7 +8,7 @@ body {
     box-sizing: border-box;
     font-family: 'Fira Code', Tahoma, Geneva, Verdana, sans-serif;
     background: url("assets/images/fundo.jpg") center/cover no-repeat,
-                linear-gradient(135deg, #0D1117, #132744);
+    linear-gradient(135deg, #0D1117, #132744);
     width: 100%;
 }
 

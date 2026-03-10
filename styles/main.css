@@ -25,7 +25,7 @@
 
 .nav-bar a:hover {
     color: blueviolet;
-    border-top: 1px solid blueviolet;
+    border-bottom: 1px solid blueviolet;
     border-image: linear-gradient(to right, transparent, blueviolet, transparent) 1;
 }
 
@@ -114,10 +114,10 @@
 }
 
 .projetos h1 {
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center;
-        color: blueviolet;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: blueviolet;
 }
 
 .projetos strong {
