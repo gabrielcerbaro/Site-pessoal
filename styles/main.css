@@ -230,33 +230,6 @@
 .card4 { grid-area: card4; }
 .card5 { grid-area: card5; }
 
-footer {
-    background-color: #183757;
-    width: 100%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-footer img {
-    width: 50px;
-    height: auto;
-}
-
-footer img:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
-}
-
-footer h1 {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    color: #C9D1D9;
-}
-
 @media (max-width: 768px) {
   .nav-bar { 
     flex-direction: column; gap: 12px; 
