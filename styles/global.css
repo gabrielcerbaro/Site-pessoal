@@ -28,3 +28,7 @@ header {
   .projetos-container { grid-template-columns: 1fr; }
   .menu-bar { flex-direction: column; gap: 10px; }
 }
+
+html {
+  scroll-behavior: smooth;
+}

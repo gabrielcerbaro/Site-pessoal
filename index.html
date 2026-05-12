@@ -20,7 +20,7 @@
         <header class="header">
             <img src="../assets/perfil.jfif" class="foto-perfil" alt="foto de perfil">
             <strong>Bem-vindo ao meu site!</strong>
-            <p>Eu sou o Gabriel Cerbaro, um desenvolvedor web apaixonado por tecnologia e inovação.</p>
+            <p id="texto-digitado"></p>
             
             <div class="icons">
                 <img src="/assets/icons/html.png" alt="">
@@ -135,7 +135,26 @@
             <a href="https://github.com/gabrielcerbaro" target="_blank"><img src="/assets/icons/github.png" alt="GitHub"></a>
             <a href="mailto:gabriel.cerbaro@outlook.com" target="_blank"><img src="/assets/icons/enviar.png" alt="Email"></a>
         </div>
+        <p>© <span id="ano"></span> Gabriel Cerbaro</p>
     </footer>
 
+    <script>
+        const texto = "Eu sou o Gabriel Cerbaro, um desenvolvedor de software em constante evolução";
+        const elemento = document.getElementById("texto-digitado");
+        let i = 0;
+
+        function digitar() {
+
+            if (i < texto.length) {
+                elemento.textContent += texto[i]
+                i++
+                setTimeout(digitar, 40)
+            }
+        }
+
+        digitar()
+
+        document.getElementById("ano").textContent = new Date().getFullYear()
+    </script>
 </body>
 </html>
