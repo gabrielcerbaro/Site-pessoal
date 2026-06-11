@@ -9,18 +9,11 @@ footer {
 }
 
 footer img {
-    width: 50px;
+    width: 70px;
     height: auto;
 }
 
 footer img:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease;
-}
-
-footer h1 {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    color: #C9D1D9;
 }
